@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyqvd3c3m7ltu"]
+
+[ext_resource type="Script" path="res://Scenes/respawn.gd" id="1_d62ab"]
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_huuw7"]
+
+[node name="Death" type="Node2D"]
+
+[node name="Respawn" type="Button" parent="."]
+offset_left = 851.0
+offset_top = 634.0
+offset_right = 994.0
+offset_bottom = 674.0
+text = "Respawn"
+script = ExtResource("1_d62ab")
+
+[node name="Main Menu" type="Button" parent="."]
+offset_left = 861.0
+offset_top = 706.0
+offset_right = 985.0
+offset_bottom = 741.0
+text = "Main Menu"
+script = ExtResource("1_huuw7")
+
+[connection signal="pressed" from="Respawn" to="Respawn" method="_on_pressed"]
+[connection signal="pressed" from="Main Menu" to="Main Menu" method="_on_pressed"]
