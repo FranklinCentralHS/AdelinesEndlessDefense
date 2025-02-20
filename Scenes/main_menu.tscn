@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqvir07wmx8db"]
+
+[ext_resource type="Script" path="res://Scenes/start.gd" id="1_ur7m3"]
+[ext_resource type="Script" path="res://Scenes/exit.gd" id="2_ht36x"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="Start" type="Button" parent="."]
+offset_left = 568.0
+offset_top = 463.0
+offset_right = 614.0
+offset_bottom = 494.0
+text = "Start"
+script = ExtResource("1_ur7m3")
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 574.0
+offset_top = 500.0
+offset_right = 611.0
+offset_bottom = 531.0
+size_flags_horizontal = 3
+text = "Exit"
+script = ExtResource("2_ht36x")
+
+[connection signal="pressed" from="Start" to="Start" method="_on_pressed"]
+[connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
