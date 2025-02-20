@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dyqvd3c3m7ltu"]
 
-[ext_resource type="Script" path="res://Scenes/respawn.gd" id="1_d62ab"]
-[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_huuw7"]
+[ext_resource type="Script" path="res://Script/respawn.gd" id="1_d62ab"]
+[ext_resource type="Script" path="res://Script/main_menu.gd" id="1_huuw7"]
 
 [node name="Death" type="Node2D"]
 
