@@ -1,26 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqvir07wmx8db"]
+[gd_scene load_steps=4 format=3 uid="uid://dqvir07wmx8db"]
 
-[ext_resource type="Script" path="res://Scenes/start.gd" id="1_ur7m3"]
-[ext_resource type="Script" path="res://Scenes/exit.gd" id="2_ht36x"]
+[ext_resource type="Script" path="res://Script/start.gd" id="1_ur7m3"]
+[ext_resource type="Script" path="res://Script/exit.gd" id="2_ht36x"]
+[ext_resource type="Texture2D" uid="uid://cug06ticapa20" path="res://Assets/Adeline’s Endless Defense.png" id="3_wm1sw"]
 
 [node name="MainMenu" type="Node2D"]
 
-[node name="Start" type="Button" parent="."]
-offset_left = 568.0
-offset_top = 463.0
-offset_right = 614.0
-offset_bottom = 494.0
-text = "Start"
-script = ExtResource("1_ur7m3")
-
-[node name="Exit" type="Button" parent="."]
-offset_left = 574.0
-offset_top = 500.0
-offset_right = 611.0
-offset_bottom = 531.0
+[node name="Credits" type="Button" parent="."]
+offset_left = 851.0
+offset_top = 658.0
+offset_right = 1089.0
+offset_bottom = 765.0
 size_flags_horizontal = 3
 text = "Exit"
 script = ExtResource("2_ht36x")
 
+[node name="Start" type="Button" parent="."]
+offset_left = 805.0
+offset_top = 531.0
+offset_right = 1148.0
+offset_bottom = 655.0
+text = "Start"
+script = ExtResource("1_ur7m3")
+
+[node name="Adeline’sEndlessDefense" type="Sprite2D" parent="."]
+position = Vector2(966.875, 540)
+scale = Vector2(1.00716, 1)
+texture = ExtResource("3_wm1sw")
+
+[connection signal="pressed" from="Credits" to="Credits" method="_on_pressed"]
 [connection signal="pressed" from="Start" to="Start" method="_on_pressed"]
-[connection signal="pressed" from="Exit" to="Exit" method="_on_pressed"]
