@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://djfmj6wqs32jt"]
+[gd_scene load_steps=5 format=3 uid="uid://68noi74e12s"]
 
 [ext_resource type="Script" path="res://Script/Player.gd" id="1_nxs53"]
-[ext_resource type="Texture2D" path="res://Assets/adeline idle (no weapon).png" id="2_l2ptw"]
+[ext_resource type="Texture2D" uid="uid://cc814gn7vbm35" path="res://Assets/adeline idle (no weapon).png" id="2_l2ptw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tj7bb"]
 size = Vector2(433, 1296)
