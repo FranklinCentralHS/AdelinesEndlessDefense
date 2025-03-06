@@ -24,7 +24,11 @@ position = Vector2(-903, -424)
 shape = SubResource("CircleShape2D_8tppm")
 
 [node name="AdelineIdle(noWeapon)" type="Sprite2D" parent="."]
-position = Vector2(36, -23)
+position = Vector2(-903, -425.5)
+scale = Vector2(0.182444, 0.192418)
 texture = ExtResource("2_l2ptw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-880, -431)
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
