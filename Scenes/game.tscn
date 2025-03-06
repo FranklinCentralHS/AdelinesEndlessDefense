@@ -7,7 +7,78 @@
 position = Vector2(-1230, 174)
 
 [node name="Player" parent="." instance=ExtResource("1_x1vib")]
-position = Vector2(2938, 670)
+position = Vector2(2995, 675)
 
-[node name="Node" parent="." instance=ExtResource("2_n5ori")]
-position = Vector2(2093, 483)
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Node" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(2094, 482)
+
+[node name="Node2" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(2211, 482)
+
+[node name="Node3" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(2680, 482)
+
+[node name="Node4" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(2562, 482)
+
+[node name="Node5" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(2444, 482)
+
+[node name="Node6" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(2329, 482)
+
+[node name="Node7" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(813, 349)
+
+[node name="Node8" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1515, 349)
+
+[node name="Node9" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(930, 349)
+
+[node name="Node10" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1628, 389)
+
+[node name="Node11" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1742, 434)
+
+[node name="Node12" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(2799, 482)
+
+[node name="Node13" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1859, 482)
+
+[node name="Node14" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(3038, 483)
+
+[node name="Node15" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(343, 266)
+
+[node name="Node16" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(460, 307)
+
+[node name="Node17" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1163, 349)
+
+[node name="Node18" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(2918, 482)
+
+[node name="Node19" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(577, 349)
+
+[node name="Node20" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1399, 349)
+
+[node name="Node21" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1976, 482)
+
+[node name="Node22" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(696, 349)
+
+[node name="Node23" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1046, 349)
+
+[node name="Node24" parent="Platforms" instance=ExtResource("2_n5ori")]
+position = Vector2(1280, 349)
