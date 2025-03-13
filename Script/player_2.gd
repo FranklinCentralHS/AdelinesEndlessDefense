@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name Player
 
-
+var charge =0 
 const SPEED = 5000
 const JUMP_VELOCITY = -400.0
 
@@ -21,13 +21,13 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("p1_up") and number_of_jumps < max_jumps:
+	if Input.is_action_just_pressed("p2_up") and number_of_jumps < max_jumps:
 		velocity.y = JUMP_VELOCITY
 		number_of_jumps += 1
 			
 
 	# Get the input direction: -1, 0, 1
-	var direction = Input.get_axis("p1_left", "p1_right")
+	var direction = Input.get_axis("p2_left", "p2_right")
 
 
 	if direction:
@@ -123,3 +123,12 @@ func dialog_action(action):
 		
 	update_dialog()
 ##end dialog)
+#endregion
+
+#region Shooting 
+func _on_timer_timeout() -> void:
+	if Input.is_action_pressed("p2_x"):
+		charge+=1
+	if Input.is_action_pressed("p2_b"):
+		charge-=1 
+		
