@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsnw7f1lm0iua"]
+
+[ext_resource type="Script" path="res://Script/fire.gd" id="1_7c7nx"]
+[ext_resource type="Texture2D" uid="uid://bm5aw7wbncrcj" path="res://Assets/Screenshot 2025-03-10 133910.png" id="1_pvc7r"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_35tc0"]
+radius = 54.9717
+height = 251.973
+
+[node name="Fire" type="Node2D"]
+script = ExtResource("1_7c7nx")
+
+[node name="Screenshot2025-03-10133910" type="Sprite2D" parent="."]
+position = Vector2(3, -8)
+texture = ExtResource("1_pvc7r")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-4, -2)
+rotation = -1.56207
+shape = SubResource("CapsuleShape2D_35tc0")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

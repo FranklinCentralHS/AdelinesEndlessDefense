@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk23ug7rtete1"]
+
+[ext_resource type="Script" path="res://Script/weapon_1.gd" id="1_4bmhd"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wkv3i"]
+load_path = "res://.godot/imported/Deviantart.png-5b2b9328cc51b06a57a9ff71cdb03faa.ctex"
+
+[node name="Weapon1" type="Node2D"]
+script = ExtResource("1_4bmhd")
+
+[node name="Deviantart" type="Sprite2D" parent="."]
+position = Vector2(1, -1)
+texture = SubResource("CompressedTexture2D_wkv3i")

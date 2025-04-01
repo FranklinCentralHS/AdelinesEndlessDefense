@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c58pm1gsplvy2"]
+
+[ext_resource type="Texture2D" uid="uid://bo8l6dt7d6grp" path="res://Assets/inferno.png" id="1_lj2ge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1k5wa"]
+size = Vector2(95, 165)
+
+[node name="Node2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(23.5, 42.5)
+shape = SubResource("RectangleShape2D_1k5wa")
+
+[node name="Inferno" type="Sprite2D" parent="."]
+position = Vector2(30, 34)
+scale = Vector2(0.241625, 0.255222)
+texture = ExtResource("1_lj2ge")

@@ -1,3 +1,23 @@
+<<<<<<< Updated upstream
 [gd_scene format=3 uid="uid://g7jco347opyf"]
 
 [node name="Game" type="Node2D"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://g7jco347opyf"]
+
+[ext_resource type="PackedScene" uid="uid://68noi74e12s" path="res://Scenes/Player.tscn" id="1_x1vib"]
+[ext_resource type="PackedScene" uid="uid://cudmy6ftgbtth" path="res://Scenes/Platform.tscn" id="2_n5ori"]
+[ext_resource type="PackedScene" uid="uid://c58pm1gsplvy2" path="res://Scenes/Inferno.tscn" id="3_e2jdp"]
+
+[node name="Game" type="Node2D"]
+position = Vector2(-1230, 174)
+
+[node name="Player" parent="." instance=ExtResource("1_x1vib")]
+position = Vector2(2271, 342)
+
+[node name="Node" parent="." instance=ExtResource("2_n5ori")]
+position = Vector2(2210, 498)
+
+[node name="Node2D" parent="." instance=ExtResource("3_e2jdp")]
+position = Vector2(2123, 348)
+>>>>>>> Stashed changes

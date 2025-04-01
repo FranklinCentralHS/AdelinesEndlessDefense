@@ -24,7 +24,7 @@ text = "Start"
 script = ExtResource("1_ur7m3")
 
 [node name="Adeline’sEndlessDefense" type="Sprite2D" parent="."]
-position = Vector2(966.875, 540)
+position = Vector2(971, 536)
 scale = Vector2(1.00716, 1)
 texture = ExtResource("3_wm1sw")
 
