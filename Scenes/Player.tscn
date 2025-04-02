@@ -10,20 +10,38 @@ size = Vector2(433, 1296)
 radius = 755.439
 
 [node name="Player" type="CharacterBody2D"]
+<<<<<<< Updated upstream
 script = ExtResource("1_nxs53")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -2)
+=======
+position = Vector2(-8, 0)
+script = ExtResource("1_nxs53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(11, 1)
+>>>>>>> Stashed changes
 shape = SubResource("RectangleShape2D_tj7bb")
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(7, 10)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+<<<<<<< Updated upstream
 position = Vector2(-5, 4)
 shape = SubResource("CircleShape2D_8tppm")
 
 [node name="AdelineIdle(noWeapon)" type="Sprite2D" parent="."]
 position = Vector2(12, -17)
+=======
+position = Vector2(-2, -4)
+shape = SubResource("CircleShape2D_8tppm")
+
+[node name="AdelineIdle(noWeapon)" type="Sprite2D" parent="."]
+position = Vector2(9, 1.00006)
+scale = Vector2(0.177711, 0.186695)
+>>>>>>> Stashed changes
 texture = ExtResource("2_l2ptw")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
