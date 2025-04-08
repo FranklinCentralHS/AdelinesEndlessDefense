@@ -22,3 +22,9 @@ func _process(delta):
 func check_dead():
 	if hp<=0:
 		queue_free()
+
+func _on_Enemy_body_entered(body):
+	if body.is_in_group("player"):
+		hp -= 1
+		check_dead()
+		body.queue_free()
