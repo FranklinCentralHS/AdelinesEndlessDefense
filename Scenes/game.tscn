@@ -1,18 +1,30 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene format=3 uid="uid://g7jco347opyf"]
 
 [node name="Game" type="Node2D"]
 =======
 [gd_scene load_steps=4 format=3 uid="uid://g7jco347opyf"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://g7jco347opyf"]
+>>>>>>> Stashed changes
 
-[ext_resource type="PackedScene" uid="uid://68noi74e12s" path="res://Scenes/Player.tscn" id="1_x1vib"]
+[ext_resource type="PackedScene" uid="uid://cg8x46pyl34cv" path="res://Scenes/Inferno.tscn" id="1_x1vib"]
 [ext_resource type="PackedScene" uid="uid://cudmy6ftgbtth" path="res://Scenes/Platform.tscn" id="2_n5ori"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://c58pm1gsplvy2" path="res://Scenes/Inferno.tscn" id="3_e2jdp"]
+=======
+[ext_resource type="PackedScene" uid="uid://bn584n0xsmh61" path="res://Scenes/adeline.tscn" id="3_3inh4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rujfl"]
+size = Vector2(3512, 67)
+>>>>>>> Stashed changes
 
 [node name="Game" type="Node2D"]
 position = Vector2(-1230, 174)
 
 [node name="Player" parent="." instance=ExtResource("1_x1vib")]
+<<<<<<< Updated upstream
 position = Vector2(2271, 342)
 
 [node name="Node" parent="." instance=ExtResource("2_n5ori")]
@@ -20,4 +32,19 @@ position = Vector2(2210, 498)
 
 [node name="Node2D" parent="." instance=ExtResource("3_e2jdp")]
 position = Vector2(2123, 348)
+>>>>>>> Stashed changes
+=======
+position = Vector2(3058, 727)
+
+[node name="Node" parent="." instance=ExtResource("2_n5ori")]
+position = Vector2(2093, 483)
+
+[node name="Adeline" parent="." instance=ExtResource("3_3inh4")]
+position = Vector2(2912, 716)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2207, 491)
+shape = SubResource("RectangleShape2D_rujfl")
 >>>>>>> Stashed changes

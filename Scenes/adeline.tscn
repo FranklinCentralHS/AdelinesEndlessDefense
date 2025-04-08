@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn584n0xsmh61"]
+
+[ext_resource type="Script" path="res://Script/Adaline.gd" id="1_lt3va"]
+[ext_resource type="Texture2D" uid="uid://cc814gn7vbm35" path="res://Assets/adeline idle (no weapon).png" id="2_6uo24"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_paa8p"]
+size = Vector2(93, 252)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8tppm"]
+radius = 139.607
+
+[node name="Adeline" type="CharacterBody2D"]
+position = Vector2(904, 424)
+script = ExtResource("1_lt3va")
+
+[node name="Adline_shape" type="CollisionShape2D" parent="."]
+position = Vector2(-921.5, -419.5)
+shape = SubResource("RectangleShape2D_paa8p")
+
+[node name="Player" type="Area2D" parent="."]
+
+[node name="Player_areia" type="CollisionShape2D" parent="Player"]
+position = Vector2(-917, -416.5)
+shape = SubResource("CircleShape2D_8tppm")
+
+[node name="AdelineIdle(noWeapon)" type="Sprite2D" parent="."]
+position = Vector2(-918, -422.5)
+scale = Vector2(0.182444, 0.180973)
+texture = ExtResource("2_6uo24")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-911, -434.5)

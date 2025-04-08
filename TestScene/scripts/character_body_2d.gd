@@ -11,7 +11,7 @@ func _physics_process(_delta):
 	if Input.is_action_just_pressed("quit"):
 		get_tree().quit()
 
-	var hDirection = Input.get_axis("p%s_left" % playerId, "p%s_right" % playerId)
+	var hDirection = Input.get_axis("p1_left" % playerId, "p1_right" % playerId)
 	if hDirection:
 		velocity.x = hDirection * SPEED
 		if hDirection < 0:

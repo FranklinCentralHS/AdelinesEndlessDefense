@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://c58pm1gsplvy2"]
 
 [ext_resource type="Texture2D" uid="uid://bo8l6dt7d6grp" path="res://Assets/inferno.png" id="1_lj2ge"]
@@ -15,3 +16,37 @@ shape = SubResource("RectangleShape2D_1k5wa")
 position = Vector2(30, 34)
 scale = Vector2(0.241625, 0.255222)
 texture = ExtResource("1_lj2ge")
+=======
+[gd_scene load_steps=5 format=3 uid="uid://cg8x46pyl34cv"]
+
+[ext_resource type="Script" path="res://Script/Adaline.gd" id="1_i7le1"]
+[ext_resource type="Texture2D" uid="uid://bo8l6dt7d6grp" path="res://Assets/inferno.png" id="2_vr2lg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_paa8p"]
+size = Vector2(93, 252)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8tppm"]
+radius = 139.607
+
+[node name="Inferno" type="CharacterBody2D"]
+position = Vector2(904, 424)
+script = ExtResource("1_i7le1")
+
+[node name="Inferno_shape" type="CollisionShape2D" parent="."]
+position = Vector2(-921.5, -419.5)
+shape = SubResource("RectangleShape2D_paa8p")
+
+[node name="Player" type="Area2D" parent="."]
+
+[node name="Player_areia" type="CollisionShape2D" parent="Player"]
+position = Vector2(-917, -416.5)
+shape = SubResource("CircleShape2D_8tppm")
+
+[node name="InfernoSprite" type="Sprite2D" parent="."]
+position = Vector2(-918, -423)
+scale = Vector2(0.182444, 0.342037)
+texture = ExtResource("2_vr2lg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-911, -434.5)
+>>>>>>> Stashed changes
