@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cug06ticapa20" path="res://Assets/Adeline’s Endless Defense.png" id="2_shcal"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y4xt8"]
-radius = 312.0
-height = 624.0
+radius = 336.0
+height = 2650.0
 
 [node name="Example bad" type="Node2D"]
 script = ExtResource("1_es4an")
@@ -30,4 +30,5 @@ collision_layer = 15
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(9, -1049)
 shape = SubResource("CapsuleShape2D_y4xt8")

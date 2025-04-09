@@ -27,7 +27,7 @@ offset_bottom = 5456.0
 position = Vector2(808, 3480)
 
 [node name="Inferno" parent="." instance=ExtResource("3_emm8x")]
-position = Vector2(2154, 3694)
+position = Vector2(144, 3380)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 7
@@ -38,5 +38,5 @@ position = Vector2(7448.75, 5582)
 shape = SubResource("RectangleShape2D_unaub")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-1315, 4361)
+position = Vector2(-1500, 4447)
 shape = SubResource("RectangleShape2D_tjuqc")

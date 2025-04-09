@@ -1,13 +1,11 @@
 extends CharacterBody2D
+class_name Player
 
 var hp = 3
 var max_hp = 3
 var is_dead = false
-
-
-const SPEED = 1330.0
-const JUMP_VELOCITY = -800.0
-
+var JUMP_VELOCITY = -100.0
+var SPEED = 1030.0
 @onready var animated_sprite = $AnimatedSprite2D
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.

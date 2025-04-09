@@ -1,17 +1,21 @@
-extends CharacterBody2D
+extends Player
+func _ready():
+	var hp = 3
+	var max_hp = 3
+	var is_dead = false
+	const SPEED = 1030.0
+	const JUMP_VELOCITY = -1500.0
+	var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")*2
+	var jump_count = 0
+	var max_jumps = 2
 
 
-const SPEED = 1030.0
-const JUMP_VELOCITY = -1500.0
-
-@onready var animated_sprite = $AnimatedSprite2D
-
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")*2
-var jump_count = 0
-var max_jumps = 2
 func _physics_process(delta):
 	# Add the gravity.
+	if hp<=0:
+		is_dead = true
+	if is_dead == true:
+		queue_free()
 	if not is_on_floor():
 		velocity.y += gravity * delta
 	if is_on_floor():
@@ -24,10 +28,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("p1_down"):
 		velocity.y=-JUMP_VELOCITY*5
 	var direction = Input.get_axis("p1_left", "p1_right")
-
-
-
-
+	if Input.is_action_pressed("p1_b"):
+		$Weapon.shoot()
 
 	# Apply movement
 	if direction:

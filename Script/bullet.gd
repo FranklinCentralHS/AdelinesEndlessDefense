@@ -7,7 +7,7 @@ var cooldown: float = 1.0
 var cooldown_timer: float = 0.0
 var is_shooting = false
 var BulletScene: PackedScene = load("res://scenes/bullet.tscn")
-var speed: float = 400.0
+var speed: float = 4000.0
 var direction: Vector2 = Vector2.ZERO
 var target: Vector2 = Vector2.ZERO
 var distance_traveled: float = 0.0
@@ -38,9 +38,9 @@ func _ready():
 
 func _process(delta: float) -> void:
 	if is_active:
-		if not is_fired:
-			is_fired = true
-			direction = Vector2.RIGHT
+
+		is_fired = true
+		direction = Vector2.RIGHT
 
 		var movement = direction * speed * delta
 		position += movement
@@ -48,18 +48,15 @@ func _process(delta: float) -> void:
 
 		if distance_traveled >= max_distance:
 			queue_free()
-		else:
-			is_active = false
 
 		if is_hit:
 			hit_timer += delta
 			if hit_timer >= hit_duration:
 				queue_free()
-		else:
-			var collision = get_overlapping_bodies()
-			for body in collision:
-				if body.is_in_group("enemy"):
-					body.take_damage(damage)
-					is_hit = true
-					hit_timer = 0.0
-					break
+
+
+func check_hit(body):
+	if body is enemy:
+		body.get_parent().hp -= damage
+		is_hit = true
+		hit_timer = 0.0

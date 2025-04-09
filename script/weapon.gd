@@ -24,7 +24,7 @@ func _process(delta: float) -> void:
 		is_shooting = false
 func shoot() -> void:
 	if cooldown_timer <= 0:
-		var bullet = BulletScene.instance()
+		var bullet = BulletScene.instantiate()
 		bullet.position = position
 		bullet.damage = damage
 		bullet.range = range
