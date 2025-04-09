@@ -1,4 +1,5 @@
 extends Player
+
 func _ready():
 	var hp = 3
 	var max_hp = 3
