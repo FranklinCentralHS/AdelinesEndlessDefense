@@ -3,6 +3,7 @@ class_name weapon
 
 var damage: int = 10
 var range: int = 100
+
 var cooldown: float = 1.0
 var cooldown_timer: float = 0.0
 var is_shooting = false
