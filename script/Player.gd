@@ -4,6 +4,7 @@ class_name Player
 var hp = 3
 var max_hp = 3
 var is_dead = false
+
 var JUMP_VELOCITY = -100.0
 var SPEED = 1030.0
 
@@ -25,3 +26,4 @@ func _physics_process(delta):
 
 
 	move_and_slide()
+
