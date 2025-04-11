@@ -8,7 +8,6 @@ var is_dead = false
 const SPEED = 1330.0
 const JUMP_VELOCITY = -800.0
 
-@onready var animated_sprite = $AnimatedSprite2D
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")*2

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d0nxvsfr6l5im"]
 
-[ext_resource type="Script" path="res://script/inferno.gd" id="1_emtkf"]
+[ext_resource type="Script" uid="uid://d0qp66gnm0ahk" path="res://script/inferno.gd" id="1_emtkf"]
 [ext_resource type="Texture2D" uid="uid://bo8l6dt7d6grp" path="res://Assets/inferno.png" id="2_owygo"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a5a4w"]
