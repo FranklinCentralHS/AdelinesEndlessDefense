@@ -1,8 +1,10 @@
 extends Node2D
 
-@onready var p1:CharacterBody2D = $Adaline;
-@onready var p2:CharacterBody2D = $Inferno;
-@onready var cameraTarget:Node2D = $CameraTarget;
+@onready var p1:Player = $Adaline
+@onready var p2:Player = $Inferno
+@onready var cameraTarget:Node2D = $CameraTarget
+@onready var p1_life:ColorRect = $Camera2D/p1_life
+@onready var p2_life:ColorRect = $Camera2D/p2_life
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -20,6 +22,9 @@ func _process(delta: float) -> void:
 
 		p1.move_and_slide()
 		p2.move_and_slide()
+		
+	p1_life.size.x = p1.hp * 5
+	p2_life.size.x = p2.hp * 5
 	
 	
 	

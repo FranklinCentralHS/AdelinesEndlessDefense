@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ycwn4f480sos"
-path="res://.godot/imported/adaline_stand.png-cf4fa6c10da7934c95f6fbc0e4d9dfe4.ctex"
+uid="uid://blh8hkxoktd1u"
+path="res://.godot/imported/adeline_walk.png-9412d641f9707e87941858a76d821340.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/adaline_stand.png"
-dest_files=["res://.godot/imported/adaline_stand.png-cf4fa6c10da7934c95f6fbc0e4d9dfe4.ctex"]
+source_file="res://Sprites/adeline_walk.png"
+dest_files=["res://.godot/imported/adeline_walk.png-9412d641f9707e87941858a76d821340.ctex"]
 
 [params]
 

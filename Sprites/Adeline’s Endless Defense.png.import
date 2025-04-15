@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0ypuiiiylf5p"
-path="res://.godot/imported/adaline_walk.png-b3a526442deab9202d1c44f63aeab42e.ctex"
+uid="uid://dpser2yav7rcd"
+path="res://.godot/imported/Adeline’s Endless Defense.png-405d95f4f89c4b7f9e3703753f3f7947.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/adaline_walk.png"
-dest_files=["res://.godot/imported/adaline_walk.png-b3a526442deab9202d1c44f63aeab42e.ctex"]
+source_file="res://Sprites/Adeline’s Endless Defense.png"
+dest_files=["res://.godot/imported/Adeline’s Endless Defense.png-405d95f4f89c4b7f9e3703753f3f7947.ctex"]
 
 [params]
 
