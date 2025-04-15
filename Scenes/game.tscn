@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgorcgl3qbvgi"]
+
+[ext_resource type="Script" uid="uid://3v1yab4dtfoh" path="res://script/global.gd" id="1_hvyrj"]
+[ext_resource type="PackedScene" uid="uid://fx5tcfgo5qt6" path="res://scenes/adaline.tscn" id="2_317n2"]
+[ext_resource type="PackedScene" uid="uid://d0nxvsfr6l5im" path="res://scenes/inferno.tscn" id="3_emm8x"]
+[ext_resource type="PackedScene" uid="uid://dst4pwgm41qf7" path="res://scenes/example_bad.tscn" id="4_ubkly"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_unaub"]
+size = Vector2(14904.5, 736)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjuqc"]
+size = Vector2(2475, 3522)
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_hvyrj")
+
+[node name="Example bad" parent="." instance=ExtResource("4_ubkly")]
+position = Vector2(1499, 4844)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 9.0
+offset_top = 5258.0
+offset_right = 13417.0
+offset_bottom = 5456.0
+
+[node name="Adaline" parent="." instance=ExtResource("2_317n2")]
+position = Vector2(2602, 3218)
+
+[node name="Inferno" parent="." instance=ExtResource("3_emm8x")]
+position = Vector2(144, 3380)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 7
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7448.75, 5582)
+shape = SubResource("RectangleShape2D_unaub")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1500, 4447)
+shape = SubResource("RectangleShape2D_tjuqc")
+
+[node name="Background" type="TileMap" parent="."]
+format = 2
+
+[node name="Forground" type="TileMap" parent="Background"]
+format = 2
+
+[node name="CameraTarget" type="Node2D" parent="."]
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="CameraTarget"]
+position = Vector2(1076, 3929)
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1076, 3929)
+offset = Vector2(0, -110)
+zoom = Vector2(0.25, 0.25)
