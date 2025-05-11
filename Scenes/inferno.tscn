@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0nxvsfr6l5im"]
+
+[ext_resource type="Script" uid="uid://d0qp66gnm0ahk" path="res://script/inferno.gd" id="1_emtkf"]
+[ext_resource type="Texture2D" uid="uid://bo8l6dt7d6grp" path="res://Assets/inferno.png" id="2_owygo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a5a4w"]
+radius = 185.0
+height = 710.0
+
+[node name="Inferno" type="CharacterBody2D"]
+collision_layer = 10
+collision_mask = 15
+script = ExtResource("1_emtkf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_owygo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_a5a4w")
