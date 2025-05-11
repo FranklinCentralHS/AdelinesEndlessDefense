@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b2qbjgj7byfrt"]
 
 [ext_resource type="Texture2D" uid="uid://dpser2yav7rcd" path="res://Sprites/Adeline’s Endless Defense.png" id="1_jaeev"]
-[ext_resource type="Script" uid="uid://crayckfd3halt" path="res://scenes/start.gd" id="1_u80x2"]
+[ext_resource type="Script" uid="uid://crayckfd3halt" path="res://Scripts/start.gd" id="1_u80x2"]
 
 [node name="start" type="Node2D"]
 script = ExtResource("1_u80x2")

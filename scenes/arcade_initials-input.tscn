@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://60am68mvim60"]
+
+[ext_resource type="Script" uid="uid://cwvuitln1476w" path="res://Scripts/pick_letter.gd" id="1_5p55f"]
+
+[node name="ArcadeInitialsInput" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 69.0
+offset_top = 87.0
+offset_right = 5416.0
+offset_bottom = 2107.0
+script = ExtResource("1_5p55f")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 4676.0
+offset_bottom = 2167.0
+
+[node name="Letter1" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Letter2" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Letter3" type="Label" parent="HBoxContainer"]
+layout_mode = 2

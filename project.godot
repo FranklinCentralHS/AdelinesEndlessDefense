@@ -18,15 +18,18 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-global="*res://script/global.gd"
+Global="*res://Scripts/global.gd"
+Leaderboard="*res://Scripts/leaderboard.gd"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=3
-window/size/borderless=true
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
 
 [input]
 
@@ -480,14 +483,18 @@ quit={
 ]
 }
 
-
 [layer_names]
 
-2d_physics/layer_1="ground"
-2d_physics/layer_2="player"
-2d_physics/layer_3="enemy"
+2d_render/layer_1="Ground"
+2d_render/layer_2="Player"
+2d_render/layer_3="Enemy"
 
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+
+[sprout_lands_tilemap]
+
+disable_plugin_dialogues=true
+copy_path="res://"
