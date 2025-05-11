@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7gfxdagb7kn"]
+
+[ext_resource type="Script" uid="uid://mmhakeowvhn8" path="res://Scripts/Enm1.gd" id="1_i0bw5"]
+[ext_resource type="Texture2D" uid="uid://d2luy3nmfm731" path="res://Sprites/unnamed-5.png" id="2_7b00y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyyfi"]
+radius = 205.0
+height = 1086.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7b00y"]
+size = Vector2(379, 1115.5)
+
+[sub_resource type="Gradient" id="Gradient_7b00y"]
+offsets = PackedFloat32Array(0, 0.83815, 1)
+colors = PackedColorArray(1, 0, 0, 1, 0.121387, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kyyfi"]
+gradient = SubResource("Gradient_7b00y")
+fill = 1
+fill_from = Vector2(0.555556, 1)
+fill_to = Vector2(1, 1)
+
+[node name="Enm1" type="Node2D"]
+script = ExtResource("1_i0bw5")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(374, -7)
+target_position = Vector2(83, 1065)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(27, -5)
+target_position = Vector2(-126, 1026)
+
+[node name="RayCastDown" type="RayCast2D" parent="."]
+position = Vector2(190, 1119)
+target_position = Vector2(-2, 263)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(181, 496.5)
+scale = Vector2(1.05238, 1.93607)
+texture = ExtResource("2_7b00y")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(88, -37)
+collision_layer = 7
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(98, 599)
+shape = SubResource("CapsuleShape2D_kyyfi")
+disabled = true
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(74, 66)
+collision_layer = 7
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(117.5, 466.25)
+shape = SubResource("RectangleShape2D_7b00y")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(191, 46)
+scale = Vector2(28.6719, 36.4922)
+texture = SubResource("GradientTexture2D_kyyfi")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

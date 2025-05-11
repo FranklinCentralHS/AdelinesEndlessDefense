@@ -1,0 +1,107 @@
+[gd_scene load_steps=13 format=3 uid="uid://dvhxkdu6horsy"]
+
+[ext_resource type="Script" uid="uid://c3xtwp51e6x3h" path="res://Scripts/enemy_door.gd" id="1_a7lxl"]
+[ext_resource type="Texture2D" uid="uid://bqsp61ywo5dso" path="res://Sprites/red-door.png" id="2_kainp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydmv2"]
+atlas = ExtResource("2_kainp")
+region = Rect2(0, 0, 64, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_im5sc"]
+atlas = ExtResource("2_kainp")
+region = Rect2(0, 0, 64, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxbss"]
+atlas = ExtResource("2_kainp")
+region = Rect2(64, 0, 64, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8sab6"]
+atlas = ExtResource("2_kainp")
+region = Rect2(128, 0, 64, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cl8ge"]
+atlas = ExtResource("2_kainp")
+region = Rect2(192, 0, 64, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ksl3f"]
+atlas = ExtResource("2_kainp")
+region = Rect2(256, 0, 64, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_te247"]
+atlas = ExtResource("2_kainp")
+region = Rect2(320, 0, 64, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ok02g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydmv2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_im5sc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxbss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8sab6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cl8ge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ksl3f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_te247")
+}],
+"loop": false,
+"name": &"open",
+"speed": 8.0
+}]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_cyw2p"]
+points = PackedVector2Array(24, 123, 26, -54, -27, -112, -28, 73)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wehc4"]
+radius = 60.0
+
+[node name="EnemyDoor" type="Node2D"]
+texture_filter = 1
+scale = Vector2(5, 5)
+script = ExtResource("1_a7lxl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ok02g")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("ConvexPolygonShape2D_cyw2p")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -118.0
+offset_top = -11.0
+offset_right = 100.0
+offset_bottom = 64.0
+scale = Vector2(1.07407, 0.875)
+text = "Kill Enemies to 
+Open Door
+"
+horizontal_alignment = 1
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, 6)
+shape = SubResource("CircleShape2D_wehc4")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

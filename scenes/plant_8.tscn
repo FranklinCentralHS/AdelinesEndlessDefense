@@ -1,0 +1,137 @@
+[gd_scene load_steps=32 format=3 uid="uid://chgkdt4fy7mms"]
+
+[ext_resource type="Texture2D" uid="uid://3liod4ows1rf" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00000.png" id="1_dj7n0"]
+[ext_resource type="Texture2D" uid="uid://s0bjy6ra5axt" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00001.png" id="2_qy4x7"]
+[ext_resource type="Texture2D" uid="uid://b8uwv77mdlx3s" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00002.png" id="3_3iq3n"]
+[ext_resource type="Texture2D" uid="uid://ce1m3canp76ys" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00003.png" id="4_llc3n"]
+[ext_resource type="Texture2D" uid="uid://dfnm7af2oafxu" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00004.png" id="5_p0rg7"]
+[ext_resource type="Texture2D" uid="uid://dapl5bmko5w5j" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00005.png" id="6_62hw8"]
+[ext_resource type="Texture2D" uid="uid://ef28fy13whhg" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00006.png" id="7_bhoso"]
+[ext_resource type="Texture2D" uid="uid://bfv0tcrdyk240" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00007.png" id="8_em0wx"]
+[ext_resource type="Texture2D" uid="uid://3swoymxncyq2" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00008.png" id="9_nod1s"]
+[ext_resource type="Texture2D" uid="uid://ditg227q75rge" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00009.png" id="10_s0wqn"]
+[ext_resource type="Texture2D" uid="uid://bwn78bc58per4" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00010.png" id="11_7rpml"]
+[ext_resource type="Texture2D" uid="uid://cqlr84d2swfsa" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00011.png" id="12_locut"]
+[ext_resource type="Texture2D" uid="uid://cyqvd0gc8tjkb" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00012.png" id="13_8sxra"]
+[ext_resource type="Texture2D" uid="uid://3on8ch4ag0ig" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00013.png" id="14_5jpxn"]
+[ext_resource type="Texture2D" uid="uid://b2grra6m8cboi" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00014.png" id="15_j8mqa"]
+[ext_resource type="Texture2D" uid="uid://bf0lt3o7v41rn" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00015.png" id="16_k6c2v"]
+[ext_resource type="Texture2D" uid="uid://dnpowh6ejr5ws" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00016.png" id="17_57g8j"]
+[ext_resource type="Texture2D" uid="uid://cmsoadgibph55" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00017.png" id="18_8mwp5"]
+[ext_resource type="Texture2D" uid="uid://flnhxhc1flrr" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00018.png" id="19_ukjbe"]
+[ext_resource type="Texture2D" uid="uid://dyfuef8j6rgw7" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00019.png" id="20_3a1yl"]
+[ext_resource type="Texture2D" uid="uid://q1d5sbwre8rm" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00020.png" id="21_4loug"]
+[ext_resource type="Texture2D" uid="uid://myq652na5606" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00021.png" id="22_8m6bc"]
+[ext_resource type="Texture2D" uid="uid://smuox8gp1tss" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00022.png" id="23_daj8v"]
+[ext_resource type="Texture2D" uid="uid://c2mekdrfokoye" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00023.png" id="24_5bme0"]
+[ext_resource type="Texture2D" uid="uid://c0saucftkpxa0" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00024.png" id="25_lrisr"]
+[ext_resource type="Texture2D" uid="uid://cvtylx3eeuxrf" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00025.png" id="26_qpsps"]
+[ext_resource type="Texture2D" uid="uid://crv7fxgagcrux" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00026.png" id="27_568a0"]
+[ext_resource type="Texture2D" uid="uid://b6m60dcau6y03" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00027.png" id="28_6kvdg"]
+[ext_resource type="Texture2D" uid="uid://blxamaq4fulxo" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00028.png" id="29_tlflh"]
+[ext_resource type="Texture2D" uid="uid://bfa0eksh5gtvt" path="res://Sprites/Plant Animations/Plant 8 Poison/PlantPosion_00029.png" id="30_sn27g"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_puxfu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dj7n0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qy4x7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3iq3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_llc3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_p0rg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_62hw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bhoso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_em0wx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nod1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_s0wqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7rpml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_locut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8sxra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5jpxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_j8mqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_k6c2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_57g8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_8mwp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ukjbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_3a1yl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4loug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_8m6bc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_daj8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_5bme0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_lrisr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_qpsps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_568a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6kvdg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_tlflh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_sn27g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="Plant8" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_puxfu")
+autoplay = "default"
+frame_progress = 0.283824

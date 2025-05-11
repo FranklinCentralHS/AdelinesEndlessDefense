@@ -1,0 +1,82 @@
+[gd_scene load_steps=9 format=3 uid="uid://cxdd40tsxmpjb"]
+
+[ext_resource type="Script" uid="uid://djb687deakxvd" path="res://Scripts/button.gd" id="1_rjd1m"]
+[ext_resource type="Texture2D" uid="uid://djlbjqmc1o4jr" path="res://Sprites/unnamed-6.png" id="2_6wjfx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7y4x"]
+atlas = ExtResource("2_6wjfx")
+region = Rect2(900, 298, 62, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rhj8v"]
+atlas = ExtResource("2_6wjfx")
+region = Rect2(900, 364, 62, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3q610"]
+atlas = ExtResource("2_6wjfx")
+region = Rect2(800, 364, 62, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bdt2"]
+atlas = ExtResource("2_6wjfx")
+region = Rect2(800, 298, 62, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5282v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7y4x")
+}],
+"loop": true,
+"name": &"blue_pressed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rhj8v")
+}],
+"loop": true,
+"name": &"defult_blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3q610")
+}],
+"loop": true,
+"name": &"defult_red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bdt2")
+}],
+"loop": true,
+"name": &"red_pressed",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rhj8v"]
+radius = 73.0001
+height = 305.997
+
+[node name="Button" type="Node2D"]
+script = ExtResource("1_rjd1m")
+buttonName = "r1"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.00001, 114)
+scale = Vector2(3.29839, 2.91667)
+sprite_frames = SubResource("SpriteFrames_5282v")
+animation = &"defult_red"
+autoplay = "defult_blue"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(25, -24)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_rhj8v")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
