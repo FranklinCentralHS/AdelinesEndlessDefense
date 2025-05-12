@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b7gfxdagb7kn"]
 
-[ext_resource type="Script" path="res://Scripts/Enm1.gd" id="1_i0bw5"]
+[ext_resource type="Script" uid="uid://mmhakeowvhn8" path="res://Scripts/Enm1.gd" id="1_i0bw5"]
 [ext_resource type="Texture2D" uid="uid://d2luy3nmfm731" path="res://Sprites/unnamed-5.png" id="2_7b00y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyyfi"]

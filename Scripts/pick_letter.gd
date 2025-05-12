@@ -354,5 +354,4 @@ var forbidenWords = [
 	"SOB",
 	"FOB",
 	"SFU",
-
 ]

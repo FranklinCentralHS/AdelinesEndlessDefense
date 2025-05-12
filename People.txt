@@ -1,0 +1,18 @@
+Asset Sources:
+	Payton Mclaughlin - charichtors and screens
+	
+---
+LICENSE: V0.1
+
+This asset pack can be used in free and commercial projects. You can modify the assets as you need. Credit is not necessary but always appreciated.  You may not repackage, redistribute, or resell the assets, no matter how much they are modified.
+
+Kind regards,
+
+Maaot.
+---
+tileset
+
+
+Tutorials/References:
+	100+ people from stackoverflow
+	r/Godot

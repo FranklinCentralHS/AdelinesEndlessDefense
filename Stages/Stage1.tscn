@@ -163,4 +163,13 @@ position = Vector2(10785, 7634)
 [node name="Enm4" parent="." instance=ExtResource("2_pe4i6")]
 position = Vector2(6326, 2021)
 
+[node name="Label" type="Label" parent="."]
+offset_left = 1856.0
+offset_top = 1685.0
+offset_right = 3002.0
+offset_bottom = 2222.0
+scale = Vector2(10, 10)
+text = "A --> Jump
+X --> Attack"
+
 [connection signal="area_entered" from="Killbox" to="Killbox" method="_on_area_entered"]
