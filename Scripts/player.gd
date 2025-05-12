@@ -10,7 +10,7 @@ var flame_instance = null
 @export var hp: int = 100
 @export var SPEED = 1000.0
 @export var JUMP_VELOCITY = -2400.0
-var score = 100
+
 var dropYPos = null
 var changeAnimation = true
 var can_move = true

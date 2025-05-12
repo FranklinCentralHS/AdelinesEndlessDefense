@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cbqh48btpttaw"]
 
-[ext_resource type="Script" uid="uid://c2b8ku83jcd2d" path="res://Scripts/platform.gd" id="1_motb6"]
+[ext_resource type="Script" path="res://Scripts/platform.gd" id="1_motb6"]
 [ext_resource type="Texture2D" uid="uid://exwtqtalcqcm" path="res://Sprites/Mossy Tileset/Mossy - TileSet.png" id="2_wwpbi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o1scf"]

@@ -1,17 +1,50 @@
-[gd_scene load_steps=2 format=3 uid="uid://cudmy6ftgbtth"]
+[gd_scene load_steps=7 format=3 uid="uid://cbqh48btpttaw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_63ieu"]
-size = Vector2(118, 40)
+[ext_resource type="Script" path="res://Scripts/platform.gd" id="1_motb6"]
+[ext_resource type="Texture2D" uid="uid://exwtqtalcqcm" path="res://Sprites/Mossy Tileset/Mossy - TileSet.png" id="2_wwpbi"]
 
-[node name="Node" type="StaticBody2D"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1scf"]
+atlas = ExtResource("2_wwpbi")
+region = Rect2(196, 1536, 1129, 512)
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -59.0
-offset_top = -22.0
-offset_right = 59.0
-offset_bottom = 18.0
-color = Color(0.999933, 1, 0.00542838, 1)
+[sub_resource type="SpriteFrames" id="SpriteFrames_hpx8l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1scf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -2)
-shape = SubResource("RectangleShape2D_63ieu")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gi0ke"]
+size = Vector2(879, 290.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t47mu"]
+size = Vector2(926, 225)
+
+[node name="Platform" type="Node2D"]
+script = ExtResource("1_motb6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hpx8l")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, -116.875)
+shape = SubResource("RectangleShape2D_gi0ke")
+one_way_collision = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, -11.5)
+shape = SubResource("RectangleShape2D_t47mu")
+one_way_collision = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

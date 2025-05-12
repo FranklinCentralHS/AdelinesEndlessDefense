@@ -3,27 +3,26 @@ extends Control
 var alphabet := "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var current_indices := [0, 0, 0]
 var selected_letter := 0  
-var level_over = false
+
 @onready var labels := [$HBoxContainer/Letter1, $HBoxContainer/Letter2, $HBoxContainer/Letter3]
 
 func _ready():
+	print("Win scene loaded")
 	update_labels()
+	print("setting label color")
 	labels[selected_letter].add_theme_color_override("font_color", Color.YELLOW)
 
 func _input(event):
-	if level_over==true:
-		self.visible = true
-		get_tree().paused = true
-		if event.is_action_pressed("p1_left"):
-			select_prev_letter()
-		elif event.is_action_pressed("p1_right"):
-			select_next_letter()
-		elif event.is_action_pressed("p1_up"):
-			scroll_letter(1)
-		elif event.is_action_pressed("p1_down"):
-			scroll_letter(-1)
-		elif event.is_action_pressed("p1_start"):
-			confirm_initials()
+	if event.is_action_pressed("p1_left"):
+		select_prev_letter()
+	elif event.is_action_pressed("p1_right"):
+		select_next_letter()
+	elif event.is_action_pressed("p1_up"):
+		scroll_letter(1)
+	elif event.is_action_pressed("p1_down"):
+		scroll_letter(-1)
+	elif event.is_action_pressed("p1_start"):
+		confirm_initials()
 
 func select_prev_letter():
 	labels[selected_letter].add_theme_color_override("font_color", Color.WHITE)
@@ -48,13 +47,14 @@ func confirm_initials():
 	for i in current_indices:
 		initials += alphabet[i]
 	print("Initials entered: ", initials)
-	var total_score = (self.get_parent().get_parent().get_child(1).score - (100 + self.get_parent().get_parent().get_child(1).hp) + (self.get_parent().get_parent().get_child(2).score + (100 - self.get_parent().get_parent().get_child(2).hp)))
+	
 	if initials in forbidenWords:
 		pass
 	else:
 		print(initials + "total_score")
-		Leaderboard.add_score(initials, total_score)
-	hide() 
+		Leaderboard.add_score(initials, Global.score)
+		self.queue_free()
+		
 	print("done")
 
 var forbidenWords = [

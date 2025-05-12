@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://60am68mvim60"]
+[gd_scene load_steps=2 format=3 uid="uid://bmyeibcykrne7"]
 
 [ext_resource type="Script" uid="uid://cwvuitln1476w" path="res://Scripts/pick_letter.gd" id="1_5p55f"]
 
@@ -13,14 +13,26 @@ script = ExtResource("1_5p55f")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_right = 4676.0
-offset_bottom = 2167.0
+offset_left = 822.0
+offset_top = -108.0
+offset_right = 1994.0
+offset_bottom = 1034.0
 
 [node name="Letter1" type="Label" parent="HBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "A"
 
 [node name="Letter2" type="Label" parent="HBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "A"
 
 [node name="Letter3" type="Label" parent="HBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "A"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

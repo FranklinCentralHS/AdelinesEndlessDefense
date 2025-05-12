@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=4 uid="uid://bkpf8repmmh12"]
+[gd_scene load_steps=10 format=4 uid="uid://d330a436gh065"]
 
 [ext_resource type="TileSet" uid="uid://c5m7gq8m2axn0" path="res://Sprites/moss.tres" id="1_coq74"]
-[ext_resource type="Script" uid="uid://dehao88nh0sop" path="res://Scripts/killbox.gd" id="2_d4bet"]
+[ext_resource type="Script" path="res://Scripts/killbox.gd" id="2_d4bet"]
 [ext_resource type="PackedScene" uid="uid://cbqh48btpttaw" path="res://scenes/Platform.tscn" id="2_g3vdy"]
 [ext_resource type="PackedScene" uid="uid://de6ewv2acr2qd" path="res://scenes/light.tscn" id="3_fpl70"]
 [ext_resource type="PackedScene" uid="uid://ln0xi45xv1x3" path="res://scenes/victory_spot.tscn" id="4_ih5db"]
@@ -99,7 +99,7 @@ position = Vector2(7085, 1288.38)
 shape = SubResource("RectangleShape2D_myn2n")
 
 [node name="victory_spot" parent="." instance=ExtResource("4_ih5db")]
-position = Vector2(26937, 1554)
+position = Vector2(26877, 1674)
 
 [node name="Enm1" parent="." instance=ExtResource("7_o6ce3")]
 position = Vector2(16668, 3549)

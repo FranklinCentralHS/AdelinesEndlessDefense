@@ -7,6 +7,7 @@ const SAVE_PATH = "user://leaderboard.save"
 const MAX_ENTRIES = 10
 
 func _ready():
+	
 	load_scores()
 
 func load_scores():
@@ -31,12 +32,15 @@ func save_scores():
 	file.store_string(JSON.stringify(scores))
 
 func add_score(name: String, score: int):
-
+	print("adding score %s %s" % [name, score])
 	scores.append({"name": name, "score": score})
 	scores.sort_custom(func(a, b): return b["score"] < a["score"])
+	
 	if scores.size() > MAX_ENTRIES:
 		scores.resize(MAX_ENTRIES)
 	save_scores()
+	get_tree().change_scene_to_file("res://scenes/start.tscn")
+	
 
 	
 

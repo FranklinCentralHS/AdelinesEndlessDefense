@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dq2ffw1lbj4tl"]
+[gd_scene load_steps=6 format=3 uid="uid://dgs5225aj2we5"]
 
-[ext_resource type="Script" uid="uid://ba4e56dym85y8" path="res://Scripts/home.gd" id="1_krot7"]
+[ext_resource type="Script" path="res://Scripts/home.gd" id="1_krot7"]
 [ext_resource type="Texture2D" uid="uid://cr4opymn7hlsl" path="res://Sprites/background.png" id="2_u4wd2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u4wd2"]

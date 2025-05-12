@@ -1,7 +1,7 @@
 [gd_scene load_steps=31 format=3 uid="uid://tdukinw1t8hc"]
 
 [ext_resource type="Texture2D" uid="uid://bqsp61ywo5dso" path="res://Sprites/red-door.png" id="1_hpvv5"]
-[ext_resource type="Script" uid="uid://bnmj3m7kb2k3y" path="res://Scripts/door.gd" id="1_uvdjg"]
+[ext_resource type="Script" path="res://Scripts/door.gd" id="1_uvdjg"]
 [ext_resource type="Texture2D" uid="uid://byl2qglww310c" path="res://Sprites/blue-door.png" id="2_83dcw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ykb3b"]

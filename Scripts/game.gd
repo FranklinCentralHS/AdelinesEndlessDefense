@@ -6,13 +6,13 @@ extends Node2D
 @onready var p1_life = get_node("/root/Game/Camera2D/p1_life")
 @onready var p2_life = get_node("/root/Game/Camera2D/p2_life")
 
-var stageNum = null
 var stageScene = null
 
 var stages = [
-	{ "scene": "res://Stages/Stage3.tscn", "startX": 495, "startY": 1225 },
 	{ "scene": "res://Stages/Stage1.tscn", "startX": 550, "startY": 3250 },
 	{ "scene": "res://Stages/Stage2.tscn", "startX": 0, "startY": 2250 },
+	{ "scene": "res://Stages/Stage3.tscn", "startX": 495, "startY": 1225 },
+	{ "scene": "res://scenes/win.tscn", "startX": 5000, "startY": 4000 },
 ]
 
 func _ready():
@@ -21,7 +21,7 @@ func _ready():
 	next_stage()
 
 func _process(_delta: float) -> void:
-	if not p1: return
+	if not stageScene: return
 
 	if p1 and p2 and cameraTarget:
 		cameraTarget.position.x = (p1.position.x + p2.position.x) / 2
@@ -44,26 +44,30 @@ func _process(_delta: float) -> void:
 func next_stage():
 	print("running stage")
 
-	if stageNum == null:
-		stageNum = 0
+	if Global.stageNum == null:
+		Global.stageNum = 0
 		print("set 0")
 
 	else:
-		stageNum += 1
+		Global.stageNum += 1
 		print("+1")
+
+	Global.score += Global.stageNum * 1000
 		
 	start_stage()
 
 func start_stage():
-	var sceneName = "res//scenes/home.tscn"
+	print("Starting stage %s" % Global.stageNum)
 
 	if stageScene:
 		#remove current stage
 		remove_child(stageScene)
+	
+	var sceneName:String
 
-	if len(stages) > stageNum:
+	if len(stages) > Global.stageNum:
 		print("big func")
-		var stage = stages[stageNum]
+		var stage = stages[Global.stageNum]
 		sceneName = stage.scene
 		p1.position.x = stage.startX
 		p1.position.y = stage.startY

@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bdjw4pkwfbx6e"]
 
-[ext_resource type="Script" uid="uid://c8seybmlib04q" path="res://Scripts/flame.gd" id="1_x50ei"]
+[ext_resource type="Script" path="res://Scripts/flame.gd" id="1_x50ei"]
 [ext_resource type="Texture2D" uid="uid://itll47ewl76r" path="res://Sprites/unnamed-2.png" id="2_hmmd7"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_x50ei"]

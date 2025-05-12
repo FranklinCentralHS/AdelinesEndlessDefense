@@ -32,6 +32,7 @@ func _on_enemy_killed():
 	if open:
 		return
 		
+	Global.score += 100
 	num_enemies_killed += 1
 	update_label()
 

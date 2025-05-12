@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=4 uid="uid://u3sqminryjmo"]
 
 [ext_resource type="TileSet" uid="uid://c5m7gq8m2axn0" path="res://Sprites/moss.tres" id="1_jy22c"]
-[ext_resource type="Script" uid="uid://dehao88nh0sop" path="res://Scripts/killbox.gd" id="3_jksk4"]
+[ext_resource type="Script" path="res://Scripts/killbox.gd" id="3_jksk4"]
 [ext_resource type="PackedScene" uid="uid://de6ewv2acr2qd" path="res://scenes/light.tscn" id="4_tuvef"]
 [ext_resource type="PackedScene" uid="uid://tdukinw1t8hc" path="res://scenes/door.tscn" id="5_qaj1f"]
 [ext_resource type="PackedScene" uid="uid://cxdd40tsxmpjb" path="res://scenes/button.tscn" id="6_8j0br"]
@@ -55,7 +55,7 @@ position = Vector2(21977, 33)
 position = Vector2(24012, 48)
 
 [node name="victory_spot3" parent="." instance=ExtResource("15_yf3ex")]
-position = Vector2(26054, 48)
+position = Vector2(25602, -993)
 
 [node name="Door" parent="." instance=ExtResource("5_qaj1f")]
 position = Vector2(4676, 207)

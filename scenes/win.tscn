@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0lshf0mm1n8v"]
+
+[ext_resource type="PackedScene" uid="uid://bmyeibcykrne7" path="res://scenes/arcade_initials-input.tscn" id="1_r4oei"]
+[ext_resource type="PackedScene" uid="uid://ck6ygqhr8hua8" path="res://scenes/leaderboard.tscn" id="2_iiocm"]
+
+[node name="Win" type="Node2D"]
+scale = Vector2(5, 5)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_top = 5.0
+offset_right = 1890.0
+offset_bottom = 1611.0
+color = Color(0, 0.415686, 0.498039, 1)
+
+[node name="Leaderboard" parent="." instance=ExtResource("2_iiocm")]
+offset_left = 503.0
+offset_top = 591.0
+offset_right = 1075.0
+offset_bottom = 1047.0
+scale = Vector2(2.5, 2.5)
+
+[node name="ArcadeInitialsInput" parent="." instance=ExtResource("1_r4oei")]
+offset_left = 7.0
+offset_top = 210.2
+offset_right = 1610.0
+offset_bottom = 1127.2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-6.2, -5.2, -6.2, 1066, 1878.6, 1062, 1878.6, 14, 1610.4, 893.2, 233.6, 899.6)
