@@ -95,13 +95,13 @@ func spawn_flame():
 		if sprite.flip_h:
 			flame_instance.get_child(0).flip_h = true
 			if player == "p1":
-				flame_instance.position = Vector2(-450, -300) 
+				flame_instance.position = Vector2(-680, -210) 
 			else:
 				flame_instance.position = Vector2(-850, -100)
 			flame_instance.direction = Vector2.LEFT  
 		else:
 			if player == "p1":
-				flame_instance.position = Vector2(1000, -300) 
+				flame_instance.position = Vector2(700, -210) 
 			else:
 				flame_instance.position = Vector2(1000, -100)
 			flame_instance.direction = Vector2.RIGHT  
