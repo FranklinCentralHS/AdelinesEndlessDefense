@@ -1,7 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://b06f2dk28v13s"]
-
-[sub_resource type="Resource" id="Resource_8tegq"]
-metadata/__load_path__ = "res://script/enemy.gd"
+[gd_scene format=3 uid="uid://b06f2dk28v13s"]
 
 [node name="Enemy" type="Node2D"]
-script = SubResource("Resource_8tegq")

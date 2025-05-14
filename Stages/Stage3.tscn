@@ -89,26 +89,21 @@ position = Vector2(26877, 1674)
 [node name="Enm1" parent="." instance=ExtResource("7_o6ce3")]
 position = Vector2(16668, 3549)
 points = 0
-points = 0
 
 [node name="Enm2" parent="." instance=ExtResource("7_o6ce3")]
 position = Vector2(17963, 2506)
-points = 0
 points = 0
 
 [node name="Enm3" parent="." instance=ExtResource("7_o6ce3")]
 position = Vector2(22810, -33)
 points = 0
-points = 0
 
 [node name="Enm4" parent="." instance=ExtResource("7_o6ce3")]
 position = Vector2(12294, 1018)
 points = 0
-points = 0
 
 [node name="Enm5" parent="." instance=ExtResource("7_o6ce3")]
 position = Vector2(13182, 988)
-points = 0
 points = 0
 
 [node name="Plants" type="Node2D" parent="."]

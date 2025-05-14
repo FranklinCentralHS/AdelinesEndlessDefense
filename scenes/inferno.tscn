@@ -1,10 +1,22 @@
-[gd_scene load_steps=6 format=3 uid="uid://do3sstujhlre6"]
+[gd_scene load_steps=7 format=3 uid="uid://do3sstujhlre6"]
 
 [ext_resource type="Texture2D" uid="uid://c63upjksjxu1s" path="res://Sprites/inferno_stand.png" id="2_12ijl"]
 [ext_resource type="Texture2D" uid="uid://0qwfs7vjga4q" path="res://Sprites/inferno_walk.png" id="3_sha4n"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogq21"]
+atlas = ExtResource("3_sha4n")
+region = Rect2(0, 0, 1217, 766)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_7sc4i"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogq21")
+}],
+"loop": true,
+"name": &"atacking",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_12ijl")
@@ -22,36 +34,39 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ur0t"]
-size = Vector2(185.896, 83)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8ur0t"]
+radius = 46.3333
+height = 172.667
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ogq21"]
 radius = 66.3334
-height = 306.667
+height = 261.333
 
 [node name="Inferno" type="CharacterBody2D"]
+position = Vector2(1, -207)
 collision_layer = 3
 collision_mask = 13
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(73.7256, 40.5)
+position = Vector2(-1.00006, 119)
 scale = Vector2(0.86397, 0.724543)
 sprite_frames = SubResource("SpriteFrames_7sc4i")
-animation = &"walk"
+animation = &"atacking"
 autoplay = "walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(186, 165)
+position = Vector2(8, 244)
+rotation = 1.5708
 scale = Vector2(3, 3)
-shape = SubResource("RectangleShape2D_8ur0t")
+shape = SubResource("CapsuleShape2D_8ur0t")
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(0.312538, -33.1251)
+position = Vector2(-2.98023e-08, 0.999992)
 collision_layer = 3
 collision_mask = 13
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(155.687, 133.125)
+position = Vector2(-1, 211)
 rotation = 1.5708
 scale = Vector2(3, 3)
 shape = SubResource("CapsuleShape2D_ogq21")

@@ -1,10 +1,11 @@
 extends Node2D
 class_name enemy
 
-const SPEED = 60
+const SPEED :int = 60
 @export var stats : Resource
 
-var direction = 1
+var direction :int = 1
+var damage :int = 20
 @onready var sprite = $Sprite2D
 @onready var ray_cast_right = $RayCastRight
 @onready var ray_cast_left = $RayCastLeft

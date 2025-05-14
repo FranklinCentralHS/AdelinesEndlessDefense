@@ -6,7 +6,7 @@ signal start_stage()
 signal next_stage()
 signal show_leaderboard()
 
-var kill_points = 0
-var level = 1
+var kill_points :int = 0
+var level :int = 1
 var stageNum = 2
-var score = 0
+var score :int = 0

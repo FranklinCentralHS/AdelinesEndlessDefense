@@ -4,16 +4,19 @@ extends CharacterBody2D
 @onready var sprite = $AnimatedSprite2D
 @onready var collisionShape = $CollisionShape2D
 @onready var flame = preload("res://scenes/flame.tscn")
-var flame_instance = null
+var flame_instance:Area2D = null
 
 @export var player = "p1"
 @export var hp: int = 100
+@export var flame_pos: Vector2
 @export var SPEED = 1000.0
 @export var JUMP_VELOCITY = -2400.0
 
 var dropYPos = null
 var changeAnimation = true
 var can_move = true
+var takingDamage = false
+
 func _physics_process(delta):
 	var direction = Input.get_axis(player + "_left", player + "_right")
 
@@ -91,20 +94,15 @@ func spawn_flame():
 		print("creating flame instance")
 		flame_instance = flame.instantiate()
 		add_child(flame_instance)
-		
+	
 		if sprite.flip_h:
-			flame_instance.get_child(0).flip_h = true
-			if player == "p1":
-				flame_instance.position = Vector2(-680, -210) 
-			else:
-				flame_instance.position = Vector2(-850, -100)
-			flame_instance.direction = Vector2.LEFT  
+			flame_instance.rotate(3.14159)
+			flame_instance.position.x = -1 * flame_pos.x
+			flame_instance.position.y = flame_pos.y
 		else:
-			if player == "p1":
-				flame_instance.position = Vector2(700, -210) 
-			else:
-				flame_instance.position = Vector2(1000, -100)
-			flame_instance.direction = Vector2.RIGHT  
+			flame_instance.rotate(0)
+			flame_instance.position.x = flame_pos.x
+			flame_instance.position.y = flame_pos.y
 		
 		
 func despawn_flame():

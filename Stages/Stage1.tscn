@@ -156,7 +156,6 @@ rotation = 4.68621
 [node name="EnemyDoor" parent="." instance=ExtResource("16_5xdv8")]
 position = Vector2(16892, 7410)
 scale = Vector2(5, 10)
-num_enemies = 1
 
 [node name="Enm3" parent="." instance=ExtResource("2_pe4i6")]
 position = Vector2(10785, 7634)
