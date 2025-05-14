@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddbsyb8tnj66e"
-path="res://.godot/imported/2.png-3dca48af2e81a259f423984c6f74eefd.ctex"
+uid="uid://de818rorkr8md"
+path="res://.godot/imported/inferno walking.png-f419b82aa25e55ba5dd9a6dd36fe6b09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Parallax_Backgrounds_Cave/2.png"
-dest_files=["res://.godot/imported/2.png-3dca48af2e81a259f423984c6f74eefd.ctex"]
+source_file="res://Sprites/Assets/inferno walking.png"
+dest_files=["res://.godot/imported/inferno walking.png-f419b82aa25e55ba5dd9a6dd36fe6b09.ctex"]
 
 [params]
 

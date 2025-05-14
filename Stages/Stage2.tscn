@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://u3sqminryjmo"]
+[gd_scene load_steps=23 format=4 uid="uid://u3sqminryjmo"]
 
 [ext_resource type="TileSet" uid="uid://c5m7gq8m2axn0" path="res://Sprites/moss.tres" id="1_jy22c"]
 [ext_resource type="Script" path="res://Scripts/killbox.gd" id="3_jksk4"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://b7dcs1qgicfh6" path="res://scenes/plant_9.tscn" id="17_k2exd"]
 [ext_resource type="PackedScene" uid="uid://gat1gbpcrk6k" path="res://scenes/bf_1.tscn" id="18_6ktwy"]
 [ext_resource type="PackedScene" uid="uid://cry4t5stsbhgc" path="res://scenes/bf_2.tscn" id="19_yf3ex"]
+[ext_resource type="PackedScene" uid="uid://v7fbwuuc4ehs" path="res://scenes/enm_2.tscn" id="20_ocmxd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pagh0"]
 size = Vector2(20683.5, 1894.5)
@@ -106,17 +107,8 @@ position = Vector2(5944, -4183)
 [node name="Enm1" parent="." instance=ExtResource("7_d71q4")]
 position = Vector2(12134, 1526)
 
-[node name="Enm2" parent="." instance=ExtResource("7_d71q4")]
-position = Vector2(7689, -3599)
-
-[node name="Enm3" parent="." instance=ExtResource("7_d71q4")]
-position = Vector2(6622, -3097)
-
-[node name="Enm7" parent="." instance=ExtResource("7_d71q4")]
-position = Vector2(6564, -5159)
-
 [node name="Enm4" parent="." instance=ExtResource("7_d71q4")]
-position = Vector2(8898, -2513)
+position = Vector2(8889, -2548)
 
 [node name="Enm5" parent="." instance=ExtResource("7_d71q4")]
 position = Vector2(11539, -533)
@@ -238,6 +230,15 @@ position = Vector2(-1327, -5577)
 
 [node name="Plant14" parent="." instance=ExtResource("9_l6nfr")]
 position = Vector2(-2340, -6116)
+
+[node name="Enm2" parent="." instance=ExtResource("20_ocmxd")]
+position = Vector2(6569, -4841)
+
+[node name="Enm3" parent="." instance=ExtResource("20_ocmxd")]
+position = Vector2(8081, -7391)
+
+[node name="Enm7" parent="." instance=ExtResource("20_ocmxd")]
+position = Vector2(5291, -6908)
 
 [connection signal="area_entered" from="Killbox" to="Killbox" method="_on_area_entered"]
 [connection signal="area_entered" from="Killbox2" to="Killbox2" method="_on_area_entered"]

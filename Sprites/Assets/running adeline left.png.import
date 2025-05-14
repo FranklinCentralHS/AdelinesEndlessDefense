@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de818rorkr8md"
-path="res://.godot/imported/inferno walking.png-4db749c9df518dad873c0fcb973e1b0d.ctex"
+uid="uid://bxpy8gjn6fhd7"
+path="res://.godot/imported/running adeline left.png-6d6a43bb366004111a372bbd6e55e848.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/inferno walking.png"
-dest_files=["res://.godot/imported/inferno walking.png-4db749c9df518dad873c0fcb973e1b0d.ctex"]
+source_file="res://Sprites/Assets/running adeline left.png"
+dest_files=["res://.godot/imported/running adeline left.png-6d6a43bb366004111a372bbd6e55e848.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xwcr37xwa8de"
-path="res://.godot/imported/inferno walking left.png-7bca07741259f87c4ebc7785dd7b0f84.ctex"
+uid="uid://cug06ticapa20"
+path="res://.godot/imported/Adeline’s Endless Defense.png-11b21665c959e18cbc63f0fb6b0f72de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/inferno walking left.png"
-dest_files=["res://.godot/imported/inferno walking left.png-7bca07741259f87c4ebc7785dd7b0f84.ctex"]
+source_file="res://Sprites/Assets/Adeline’s Endless Defense.png"
+dest_files=["res://.godot/imported/Adeline’s Endless Defense.png-11b21665c959e18cbc63f0fb6b0f72de.ctex"]
 
 [params]
 

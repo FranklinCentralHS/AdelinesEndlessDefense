@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://gkkj16uo6cnh"]
+[gd_scene load_steps=20 format=4 uid="uid://gkkj16uo6cnh"]
 
 [ext_resource type="TileSet" uid="uid://c5m7gq8m2axn0" path="res://Sprites/moss.tres" id="1_52kwp"]
 [ext_resource type="Script" path="res://Scripts/killbox.gd" id="2_52kwp"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://dftfj04reuymg" path="res://scenes/plant_10.tscn" id="14_ene2v"]
 [ext_resource type="PackedScene" uid="uid://ln0xi45xv1x3" path="res://scenes/victory_spot.tscn" id="15_didj4"]
 [ext_resource type="PackedScene" uid="uid://dvhxkdu6horsy" path="res://scenes/enemy_door.tscn" id="16_5xdv8"]
+[ext_resource type="PackedScene" uid="uid://v7fbwuuc4ehs" path="res://scenes/enm_2.tscn" id="17_mpbgh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5xdv8"]
 size = Vector2(1877, 607)
@@ -171,5 +172,8 @@ offset_bottom = 2801.0
 scale = Vector2(10, 10)
 text = "A --> Jump
 X --> Attack"
+
+[node name="Enm5" parent="." instance=ExtResource("17_mpbgh")]
+position = Vector2(5809, 2313)
 
 [connection signal="area_entered" from="Killbox" to="Killbox" method="_on_area_entered"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl83utbwd44yf"
-path="res://.godot/imported/5.png-e9b849bb385844b3bf55f1fdbbc3e2dd.ctex"
+uid="uid://kmaoit0geg7p"
+path="res://.godot/imported/alientextbox.png-2452617f08c96d2ae8a7ce15bc0e6d44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Parallax_Backgrounds_Cave/5.png"
-dest_files=["res://.godot/imported/5.png-e9b849bb385844b3bf55f1fdbbc3e2dd.ctex"]
+source_file="res://Sprites/Assets/alientextbox.png"
+dest_files=["res://.godot/imported/alientextbox.png-2452617f08c96d2ae8a7ce15bc0e6d44.ctex"]
 
 [params]
 
