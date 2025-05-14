@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dywk4nwvssusl"]
 
-[ext_resource type="Texture2D" uid="uid://cug06ticapa20" path="res://Assets/Adeline’s Endless Defense.png" id="2_shcal"]
+[ext_resource type="Texture2D" uid="uid://cug06ticapa20" path="res://Sprites/Assets/Adeline’s Endless Defense.png" id="2_shcal"]
 
 [sub_resource type="Resource" id="Resource_0158x"]
 metadata/__load_path__ = "res://script/example_bad.gd"

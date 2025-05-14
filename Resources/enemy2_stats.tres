@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b1pnuno6l1m0t"]
+
+[ext_resource type="Script" uid="uid://krhg7nekqp7r" path="res://Scripts/enemy_s2.gd" id="1_5e8sb"]
+
+[resource]
+script = ExtResource("1_5e8sb")
+damage = 5
+SPEED = 60

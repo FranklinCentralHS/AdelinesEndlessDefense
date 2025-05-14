@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y0808ph2g1va"
-path="res://.godot/imported/0.png-c91f92b540231df62718573f282e86d5.ctex"
+uid="uid://74mmwmpwatx3"
+path="res://.godot/imported/lil alien.png-760645c262dc0af0bc018a88500ea963.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Parallax_Backgrounds_Cave/0.png"
-dest_files=["res://.godot/imported/0.png-c91f92b540231df62718573f282e86d5.ctex"]
+source_file="res://Sprites/lil alien.png"
+dest_files=["res://.godot/imported/lil alien.png-760645c262dc0af0bc018a88500ea963.ctex"]
 
 [params]
 

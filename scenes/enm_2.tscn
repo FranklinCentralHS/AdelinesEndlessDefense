@@ -1,20 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://v7fbwuuc4ehs"]
+[gd_scene load_steps=6 format=3 uid="uid://v7fbwuuc4ehs"]
 
-[ext_resource type="Script" path="res://Scripts/enm_2.gd" id="1_rj5w6"]
-[ext_resource type="Texture2D" uid="uid://8bfi7015yync" path="res://Sprites/unnamed-3.png" id="2_rj5w6"]
+[ext_resource type="Script" uid="uid://b20ly50p1n8mi" path="res://Scripts/enm_2.gd" id="1_rj5w6"]
+[ext_resource type="Texture2D" uid="uid://74mmwmpwatx3" path="res://Sprites/lil alien.png" id="2_rj5w6"]
+[ext_resource type="Resource" uid="uid://b1pnuno6l1m0t" path="res://Resources/enemy2_stats.tres" id="2_urokv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyyfi"]
 radius = 26.0
 height = 318.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7b00y"]
-size = Vector2(409, 729.5)
+size = Vector2(182, 357.75)
 
 [node name="Enm2" type="Node2D"]
 script = ExtResource("1_rj5w6")
+stats = ExtResource("2_urokv")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(23, 8)
+position = Vector2(203, 643)
 collision_layer = 7
 collision_mask = 3
 
@@ -24,18 +26,20 @@ shape = SubResource("CapsuleShape2D_kyyfi")
 disabled = true
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(35, 36)
+position = Vector2(51, 46)
 collision_layer = 7
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(126, 383)
+position = Vector2(138, 568.875)
 shape = SubResource("RectangleShape2D_7b00y")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
-target_position = Vector2(459, 390)
+position = Vector2(280, 441)
+target_position = Vector2(87, 309)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(109, 441)
 target_position = Vector2(-85, 319)
 
 [node name="RayCastDown" type="RayCast2D" parent="."]
@@ -43,8 +47,8 @@ position = Vector2(180, 702)
 target_position = Vector2(13, 527)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(217, 290)
-scale = Vector2(1.17262, 1.6459)
+position = Vector2(178, 591)
+scale = Vector2(0.463303, 0.603476)
 texture = ExtResource("2_rj5w6")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

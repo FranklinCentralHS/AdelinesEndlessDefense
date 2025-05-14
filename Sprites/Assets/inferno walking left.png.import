@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kmaoit0geg7p"
-path="res://.godot/imported/alientextbox.png-067a7da2cfe62fe6671b6a6760d22b54.ctex"
+uid="uid://xwcr37xwa8de"
+path="res://.godot/imported/inferno walking left.png-b13789cab5dbbb96b21956e0d0cdfa65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/alientextbox.png"
-dest_files=["res://.godot/imported/alientextbox.png-067a7da2cfe62fe6671b6a6760d22b54.ctex"]
+source_file="res://Sprites/Assets/inferno walking left.png"
+dest_files=["res://.godot/imported/inferno walking left.png-b13789cab5dbbb96b21956e0d0cdfa65.ctex"]
 
 [params]
 

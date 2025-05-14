@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csfr0vk6dr80a"
-path="res://.godot/imported/YOU.png-560a1f502e95b9bc6c3a55cce0eb3158.ctex"
+uid="uid://bk6d6d1r78mng"
+path="res://.godot/imported/adelinetextbox.png-a5065c58df52e10a5a1de7850402ad1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/YOU.png"
-dest_files=["res://.godot/imported/YOU.png-560a1f502e95b9bc6c3a55cce0eb3158.ctex"]
+source_file="res://Sprites/Assets/adelinetextbox.png"
+dest_files=["res://.godot/imported/adelinetextbox.png-a5065c58df52e10a5a1de7850402ad1e.ctex"]
 
 [params]
 

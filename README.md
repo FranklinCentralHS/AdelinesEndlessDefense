@@ -21,13 +21,10 @@ Inheritance - res://Scripts/Enm1.gd
 Encapsulation - res://Scrripts/platform.gd 
 Polymorphism - res://Scripts/button.gd
 				res://Scripts/platform
-				res://Scripts/enemy_door/.gd
-Abstraction - I can fathom a reason to use this but it was not a thing that was needed
-	if in theory i wanted an item that buffes things that steap on it
-	i could absttract a buffed function and use a custom signal passing
-	through the thing the name of the thing to be buffed and then in a class 
-	creature have a function buffed(): pass and then i could
-	make the item tell the creature to run its buffed function
+				res://Scripts/enemy_door.gd
+Abstraction - res://Scripts/enm_1.gd   (enpty inheritor)?
+				res://Scripts/Enemy.gd (empty function)
+				res://Scripts/enemy_s1.gd (overwriding the function)
 	
 	or i could in the item have if body.get_parent() is ___:
 			buff for that thing and repeat for each charictor that gets a buff.
@@ -36,7 +33,10 @@ Godot Features
 Customm Signals - res://Scripts/global.gd
 					res://Scripts/door.gd
 					res://Scripts/button.gd
-
+Shaders - res://Shader
+			res://Scenes/Platform.tscn
+Resources - res://Resources
+			
 Controls
 1 - res://Scripts/player.gd
 2 - res://Scripts/pick_letter.gd

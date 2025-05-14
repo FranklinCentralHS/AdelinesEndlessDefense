@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc814gn7vbm35"
-path="res://.godot/imported/adeline idle (no weapon).png-d5c88b2ffd35c7ed8e1f3227723627da.ctex"
+uid="uid://csfr0vk6dr80a"
+path="res://.godot/imported/YOU.png-c7da3abb6d84895332ceeb787489e28d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/adeline idle (no weapon).png"
-dest_files=["res://.godot/imported/adeline idle (no weapon).png-d5c88b2ffd35c7ed8e1f3227723627da.ctex"]
+source_file="res://Sprites/Assets/YOU.png"
+dest_files=["res://.godot/imported/YOU.png-c7da3abb6d84895332ceeb787489e28d.ctex"]
 
 [params]
 

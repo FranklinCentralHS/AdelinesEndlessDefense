@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b7gfxdagb7kn"]
+[gd_scene load_steps=8 format=3 uid="uid://b7gfxdagb7kn"]
 
-[ext_resource type="Script" uid="uid://mmhakeowvhn8" path="res://Scripts/Enm1.gd" id="1_i0bw5"]
+[ext_resource type="Script" uid="uid://dvchud0037fsn" path="res://Scripts/enm_1.gd" id="1_7b00y"]
 [ext_resource type="Texture2D" uid="uid://d2luy3nmfm731" path="res://Sprites/unnamed-5.png" id="2_7b00y"]
+[ext_resource type="Resource" uid="uid://dncb4ba0knl1a" path="res://Resources/enemy1_stats.tres" id="2_kyyfi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyyfi"]
 radius = 205.0
@@ -21,7 +22,9 @@ fill_from = Vector2(0.555556, 1)
 fill_to = Vector2(1, 1)
 
 [node name="Enm1" type="Node2D"]
-script = ExtResource("1_i0bw5")
+script = ExtResource("1_7b00y")
+stats = ExtResource("2_kyyfi")
+metadata/_custom_type_script = "uid://c2h54gixptnrr"
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
 position = Vector2(374, -7)

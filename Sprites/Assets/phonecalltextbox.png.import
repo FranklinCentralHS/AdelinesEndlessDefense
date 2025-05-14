@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j5ioyr23yplw"
-path="res://.godot/imported/running adeline.png-5713d854b17f91bef23cc625ada4d3ba.ctex"
+uid="uid://ckcl8dxpdfhbw"
+path="res://.godot/imported/phonecalltextbox.png-64bca0babdc848bdcebac1f046f85ad8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/running adeline.png"
-dest_files=["res://.godot/imported/running adeline.png-5713d854b17f91bef23cc625ada4d3ba.ctex"]
+source_file="res://Sprites/Assets/phonecalltextbox.png"
+dest_files=["res://.godot/imported/phonecalltextbox.png-64bca0babdc848bdcebac1f046f85ad8.ctex"]
 
 [params]
 
