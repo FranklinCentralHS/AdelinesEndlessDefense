@@ -14,6 +14,7 @@ script = ExtResource("1_lbhrr")
 position = Vector2(2307, 1765)
 collision_layer = 2
 script = ExtResource("4_iywne")
+flame_pos = Vector2(320, -100)
 JUMP_VELOCITY = -2600.0
 
 [node name="Inferno" parent="." instance=ExtResource("4_u5sy4")]
@@ -21,6 +22,7 @@ position = Vector2(1435, 1878)
 collision_layer = 2
 script = ExtResource("4_iywne")
 player = "p2"
+flame_pos = Vector2(500, 120)
 JUMP_VELOCITY = -2300.0
 
 [node name="CameraTarget" type="Node2D" parent="."]

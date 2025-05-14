@@ -1,50 +1,94 @@
-[gd_scene load_steps=8 format=3 uid="uid://bdjw4pkwfbx6e"]
+[gd_scene load_steps=6 format=3 uid="uid://bdjw4pkwfbx6e"]
 
 [ext_resource type="Script" uid="uid://c8seybmlib04q" path="res://Scripts/flame.gd" id="1_x50ei"]
-[ext_resource type="Texture2D" uid="uid://itll47ewl76r" path="res://Sprites/unnamed-2.png" id="2_hmmd7"]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_x50ei"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5ieuq"]
-atlas = ExtResource("2_hmmd7")
-region = Rect2(856, 0, 214, 256)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pa2l1"]
-atlas = ExtResource("2_hmmd7")
-region = Rect2(1284, 0, 214, 256)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_bphau"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5ieuq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pa2l1")
-}],
-"loop": true,
-"name": &"default",
-"speed": 8.0
-}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nhxoo"]
-radius = 146.53
-height = 1067.4
+radius = 113.999
+height = 526.004
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1cfuo"]
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = -618.9
+spread = 12.857
+initial_velocity_max = 67.21
+gravity = Vector3(0, 0, 0)
+scale_min = 13.43
+scale_max = 13.43
+color = Color(1, 0, 0, 1)
+hue_variation_min = -0.03
+hue_variation_max = -0.03
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_d084y"]
+particle_flag_disable_z = true
+angle_min = -702.3
+angle_max = -702.3
+spread = 22.119
+initial_velocity_max = 73.77
+angular_velocity_min = -1.60933e-05
+angular_velocity_max = 53.11
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -7.38
+linear_accel_max = -2.23517e-06
+scale_min = 4.1
+scale_max = 13.3
+color = Color(1, 0.176471, 0, 1)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_l014h"]
+particle_flag_disable_z = true
+spread = 23.644
+initial_velocity_max = 110.66
+angular_velocity_min = 29.51
+angular_velocity_max = 29.51
+gravity = Vector3(50, 0, 0)
+linear_accel_min = -2.23517e-06
+linear_accel_max = 31.15
+scale_min = 9.2
+scale_max = 9.2
+color = Color(1, 0.521569, 0, 1)
 
 [node name="flame" type="Area2D"]
 script = ExtResource("1_x50ei")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-material = SubResource("CanvasItemMaterial_x50ei")
-position = Vector2(-17, 238)
-scale = Vector2(5.79673, 4.55664)
-sprite_frames = SubResource("SpriteFrames_bphau")
-autoplay = "default"
-frame_progress = 0.707947
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(141, 83)
-rotation = 4.83282
+position = Vector2(271, -10)
+rotation = -1.57142
 shape = SubResource("CapsuleShape2D_nhxoo")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(-2, -0.999971)
+scale = Vector2(5.79673, 4.55664)
+amount = 30
+lifetime = 1.39
+speed_scale = 17.78
+explosiveness = 0.3
+randomness = 0.21
+collision_base_size = 120.11
+process_material = SubResource("ParticleProcessMaterial_1cfuo")
+
+[node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
+position = Vector2(-1, 2.00002)
+scale = Vector2(5.79673, 4.55664)
+amount = 30
+lifetime = 2.27
+explosiveness = 0.13
+randomness = 0.29
+collision_base_size = 120.11
+process_material = SubResource("ParticleProcessMaterial_1cfuo")
+
+[node name="GPUParticles2D3" type="GPUParticles2D" parent="."]
+position = Vector2(3, 1.00003)
+scale = Vector2(5.79673, 4.55664)
+amount = 60
+lifetime = 2.49
+collision_base_size = 25.85
+process_material = SubResource("ParticleProcessMaterial_d084y")
+
+[node name="GPUParticles2D4" type="GPUParticles2D" parent="."]
+position = Vector2(1.19209e-07, 2.71797e-05)
+scale = Vector2(5.79673, 4.55664)
+amount = 60
+lifetime = 1.28
+process_material = SubResource("ParticleProcessMaterial_l014h")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

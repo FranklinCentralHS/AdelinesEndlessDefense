@@ -5,9 +5,14 @@ func _input(event):
 		_on_pressed()
 
 func _on_pressed():
-	get_tree().change_scene_to_file("res://scenes/game.tscn")
+	Global.level = 1
+	Global.stageNum = Global.stageNum - 1
 	Global.start_stage.emit()
+	get_tree().change_scene_to_file("res://scenes/game.tscn")
+
 
 
 func _on_button_2_pressed():
+	Global.level = 1
+	Global.stageNum = 1
 	get_tree().change_scene_to_file("res://scenes/start.tscn")
