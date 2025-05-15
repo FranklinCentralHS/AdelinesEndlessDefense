@@ -4,6 +4,7 @@
 I had alot of bugs that took along time to deal with while making the player. 
 I had less time than was needed for the project.
 Figureing out what needs done was dificult and it took a lot of time.
+I also had extrime dificulty with a thing called "Social Loafing"
 
 ### Suprises
 Alot of things were more dificult than expected and some things just didnt work.
