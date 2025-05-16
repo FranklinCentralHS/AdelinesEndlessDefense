@@ -1,7 +1,0 @@
-Started Project
-Art finished
-Character implemented
-Controls attempted, did not end well
-Conflicts with code caused lots of code needing to be erased
-spent 2 weeks sifting through useful/useless code
-Great Sucess
